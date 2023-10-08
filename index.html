@@ -16,55 +16,48 @@
 
 <body>
   <div class="container">
-
     <div class="weather-container">
-      <div class="clearfix">
-
-
+      <div class="weather-app">
         <form id="weather-form" class="float-left">
           <input type="text" id="weather-form-text" placeholder="Enter a city" autocomplete="off" autofocus="on">
+
           <input type="submit" value="Search" class="btn btn-primary" id="submit-id">
-
         </form>
-        <button id="weather-refresh" class="float-left btn btn-success">Current Location</button>
       </div>
-
-
       <div class="weather-summary">
         <div class="weather-summary-header">
-          <h1 id="weather-location"></h1>
-          <div id="weather-date" class="weather-detail__text">
-          </div>
-          <div class="weather-detail__text" id="weather-description"></div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="clearfix">
-              <img class="weather__icon weather__icon--today">
-              <div class="weather-temp weather-temp--today">
-
-              </div>
-              <div class="weather-unit__text weather-unit__text--today"><span class="weather-value"
-                  id="temp-val"></span>
-                °C
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="weather-detail__text">
-              Humidity: <span id="humidity-probality"></span>
-            </div>
-            <div class="weather-detail__text">
-              Wind: <span id="wind-speed"></span>
-            </div>
-          </div>
+          <h1 id="weather-location">
+          </h1>
+          <ul>
+            <li>Last updated: <span id="date"></span></li>
+            <li id="weather-description"></li>
+          </ul>
         </div>
       </div>
-      <span class="footer"> <a href="https://github.com/Chiiorrma/My-new-repo.git">Open-source code</a> by Chioma
-        Marycynthia </span>
-    </div>
-    <script src="projectwk5.js"></script>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="clearfix weather-temperature">
+            <img src="" alt="Clear" id="icon" class="float-left" />
+            <div class="float-left">
+              <strong id="temperature"></strong><span class="units"><a href="#" class="active" id="celsius-link">°C </a>
+                |
+                <a href="#" id="fahrenheit-link" class="active">°F </a></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="weather-detail__text">
+            Humidity: <span id="humidity-probality"></span>
+          </div>
+          <div class="weather-detail__text">
+            Wind: <span id="wind-speed"></span>
+          </div>
+        </div>
+
+        <span class="footer"> <a href="https://github.com/Chiiorrma/My-new-repo.git">Open-source code</a> by Chioma
+          Marycynthia </span>
+      </div>
+      <script src="projectwk5.js"></script>
 </body>
 
 </html>
