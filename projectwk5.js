@@ -51,7 +51,6 @@ function forecastWeather(response) {
                 `;
     }
   })
-
   htmlOfForecast = htmlOfForecast + `</div>`
   forecastElement.innerHTML = htmlOfForecast;
 }
