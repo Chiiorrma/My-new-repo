@@ -19,7 +19,7 @@
     <div class="weather-container">
       <div class="weather-app">
         <form id="weather-form" class="float-left">
-          <input type="text" id="weather-form-text" placeholder="Enter a city" autocomplete="off" autofocus="on">
+          <input type="text" id="weather-form-text" placeholder="Enter a city..." autocomplete="off" autofocus="on">
 
           <input type="submit" value="Search" class="btn btn-primary" id="submit-id">
         </form>
@@ -39,9 +39,9 @@
           <div class="clearfix weather-temperature">
             <img src="" alt="Clear" id="icon" class="float-left" />
             <div class="float-left">
-              <strong id="temperature"></strong><span class="units"><a href="#" class="active" id="celsius-link">°C </a>
-                |
-                <a href="#" id="fahrenheit-link" class="active">°F </a></span>
+              <strong id="temperature"></strong>
+              <span class="units"><a href="#" id="celsius-link" class="active">°C </a>
+              </span>
             </div>
           </div>
         </div>
@@ -53,11 +53,15 @@
             Wind: <span id="wind-speed"></span>
           </div>
         </div>
-
-        <span class="footer"> <a href="https://github.com/Chiiorrma/My-new-repo.git">Open-source code</a> by Chioma
-          Marycynthia </span>
       </div>
-      <script src="projectwk5.js"></script>
+      <div class="forecast" id="weather-forecast"> </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a href="https://github.com/Chiiorrma/My-new-repo.git">Open-source code</a> by Chioma
+    Marycynthia
+  </div>
+  <script src="projectwk5.js"></script>
 </body>
 
 </html>
